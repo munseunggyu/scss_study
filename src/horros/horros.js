@@ -1,12 +1,14 @@
 import React from "react";
+import './scss/style.scss';
+
 function Horros(){
   return(
     <div className="horroPageBlock">
       <div className="left__part">
         <h1>BEST HORRO SCENES</h1>
-        <h5>
-           An ever growing collection featuring some of the best scenes in horror.
-        </h5>
+        <h3>
+           An ever growing collection <br /> featuring some of the best <br /> scenes in horror.
+        </h3>
         <p>
         “Best Horror Scenes” is a collection of scenes I feel are some of the most affecting in horror. Some may be simple black cat scares, others may be more subdued or nuanced. Many come from films that aren't necessarily “horror” but have elements or threads of horror.
         </p>
