@@ -1,5 +1,6 @@
 import React from "react";
 import './scss/style.scss';
+import poster from './poster.png'
 
 function Horros(){
   return(
@@ -22,9 +23,50 @@ function Horros(){
           <li><a href="#">Letterboxd</a></li>
         </ul>
       </div>
-      <div className="right__part">
-
+      <div className="rigth__part">
+        <div className="right__block">
+          <div className="top__text">
+            <h3>
+              Hereditary (2018)
+            </h3>
+            <p>
+            Directed by Me
+            </p>
+          </div>
+          <img src={poster} alt="포스터" />
+          <p className="rating">
+          My rating: 9/10
+          </p>
+        </div>
+        <div className="right__block">
+          <div className="top__text">
+            <h3>
+              Hereditary (2018)
+            </h3>
+            <p>
+            Directed by Me
+            </p>
+          </div>
+          <img src={poster} alt="포스터" />
+          <p className="rating">
+          My rating: 9/10
+          </p>
+        </div><div className="right__block">
+          <div className="top__text">
+            <h3>
+              Hereditary (2018)
+            </h3>
+            <p>
+            Directed by Me
+            </p>
+          </div>
+          <img src={poster} alt="포스터" />
+          <p className="rating">
+          My rating: 9/10
+          </p>
+        </div>
       </div>
+      
     </div>
   )
 }

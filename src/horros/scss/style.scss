@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300;400&family=Inconsolata&family=Palette+Mosaic&display=swap');
+
 // title font
 @import url('https://fonts.googleapis.com/css2?family=Palette+Mosaic&display=swap');
 $mainColor : #e7473c;
 .horroPageBlock{
   display: flex;
+  width: 100%;
   color: $mainColor;
   font-family: 'Heebo', sans-serif;
 
@@ -37,13 +39,54 @@ $mainColor : #e7473c;
         margin-right: 10px;
         margin-bottom: 10px;
         a{
-          color: rgba(0,0,0,0.6);
+          color: black;
+          opacity: 0.6;
           text-decoration: none;
+          border-bottom: 1px solid rgba(0,0,0,0.6);
+          &:hover{
+            opacity: 1;
+          }
         }
       }
     }
   }
-  .right__part{
-    width: 60%;
+  .rigth__part{
+    width: 100%;
+    margin-left: 40%;
+    background-color: $mainColor;
+    .right__block{
+      padding: 100px 5%;
+      color: white;
+      background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.1) 5%,
+        transparent,
+        transparent,
+        transparent,
+        transparent
+      )
+      $mainColor;
+      .top__text{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        padding-bottom: 20px;
+        h3{
+          font-size: 55px;
+          font-weight: 800;
+        }
+        p{
+        }
+      }
+      img{
+        width: 100%;
+      }
+      .rating{
+        color: black;
+        text-align: right;
+        opacity: 0.8;
+        margin-top: 20px;
+      }
+    }
   }
 }
