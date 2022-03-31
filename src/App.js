@@ -1,11 +1,14 @@
 import React from 'react';
+import { Route,Routes } from 'react-router-dom';
 import Horros from './horros/horros';
+import MainPage from './main';
 
 function App() {
   return (
-    <div className="App">
-      <Horros />
-    </div>
+      <Routes>
+        <Route path='/' element={<MainPage />} />
+        <Route path='/horro' element={<Horros />} />  
+      </Routes>
   );
 }
 
