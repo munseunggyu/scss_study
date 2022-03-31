@@ -1,0 +1,96 @@
+// small font
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&family=Palette+Mosaic&display=swap');
+// big font
+@import url('https://fonts.googleapis.com/css2?family=Caladea:ital@1&family=Montserrat:wght@100&family=Palette+Mosaic&display=swap');
+@import '_text';
+@import '_button';
+
+.paint__container {
+  width: 100%;
+  padding-left: 140px;
+  padding-right: 140px;
+  header {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    padding-left: 140px;
+    padding-right: 140px;
+    nav {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      background-color: white;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      @extend %smallText;
+      .nav__left {
+        display: flex;
+
+        div {
+          &:first-child {
+            padding-right: 10px;
+          }
+        }
+      }
+      .nav__right {
+        display: flex;
+        div {
+          &:last-child {
+            margin-left: 10px;
+          }
+        }
+      }
+    }
+  }
+  main{
+    width: 100%;
+    margin-top: 113px;
+    .main__container{
+      width: 100%;
+      .first__item{
+        display: flex;
+        margin-bottom: 80px;
+        width: 100%;
+          img{
+            width: 50%;
+            height: 620px;
+          }
+        .first__item__text{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          width: 50%;
+          background-color: #FBF7F6;
+          padding: 0 70px;
+          &.pink{
+            background-color: #FBF7F6;
+          }
+          &.puple{
+            background-color: #F3EDE8;
+          }
+          &.blue{
+            background-color: #DEE8E9;
+          }
+          span{
+            padding-top: 100px;
+            @extend %smallText;
+          }
+          p{
+            padding-top: 20px;
+            @extend %bigText;
+            text-align: center;
+          }
+          button{
+            margin-top: 40px;
+            @extend %button;
+            @extend %smallText;
+          }
+        }
+      }
+    }
+  }
+}

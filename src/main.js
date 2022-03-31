@@ -4,10 +4,10 @@ import './main.scss';
 
 function MainPage(){
   return(
-    <div>
+    <div className='mainpage'>
       <ul>
         <li> <Link to="/horro"><button> Horro page </button> </Link> </li>
-        <li> <Link to="/horro"><button> Paint page </button> </Link> </li>
+        <li> <Link to="/paint"><button> Paint page </button> </Link> </li>
       </ul>
     </div>
   )
