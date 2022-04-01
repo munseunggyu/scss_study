@@ -50,7 +50,7 @@
     margin-top: 113px;
     .main__container{
       width: 100%;
-      .first__item{
+      .main__card{
         display: flex;
         margin-bottom: 80px;
         width: 100%;
@@ -58,7 +58,7 @@
             width: 50%;
             height: 620px;
           }
-        .first__item__text{
+        .main__card__text{
           display: flex;
           flex-direction: column;
           justify-content: center;
@@ -88,6 +88,55 @@
             margin-top: 40px;
             @extend %button;
             @extend %smallText;
+          }
+        }
+      }
+    }
+    .bottle__shop{
+      h5{
+        @extend %smallText;
+        text-align: center;
+        padding-bottom: 30px;
+      }
+      h3{
+        @extend %bigText;
+        opacity: 0.8;
+        text-align: center;
+      }
+      .bottles__item__container{
+        padding-top: 80px;
+
+        display: flex;
+        .bottle__item__container{
+          width: 33%;
+          padding: 20px 80px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+
+          img{
+            height: 250px;
+            width: 200px;
+            display: block; margin: 0px auto;
+            margin-bottom: 50px;
+          }
+          h5{
+
+          }
+          h3{
+            font-size: 28px;
+            padding-bottom: 20px;
+          }
+          span{
+            display: block;            
+            text-align: center;
+            @extend %smallText;
+            padding-bottom: 20px;
+            opacity: 0.4;
+            }
+          button{
+            @extend %button;
+            font-size: 12px;
           }
         }
       }
