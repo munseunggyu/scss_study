@@ -1,0 +1,50 @@
+.zoo__container{
+  header{
+    display: flex;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    height: 50px;
+    ul{
+      cursor: pointer;
+      padding: 0 10px;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      &:hover{
+        background-color: gainsboro;
+      
+      }
+      &:first-child{
+        width: 70%;
+        &:hover{
+          li:not(:first-child){
+            color: white !important;
+          }
+        }
+     
+        li{
+          &:first-child{
+            margin-right: 95px;
+            &:hover{
+              color:white;
+            }
+          }
+          &:not(:first-child){
+            color: gainsboro;
+          }
+        }
+      }
+      &:last-child{
+        width: 30%;
+      }
+      display: flex;
+      li{
+        margin-right: 50px;
+        font-size: 30px;
+        font-weight: 500;
+      }
+    }
+  }
+}

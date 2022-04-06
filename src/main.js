@@ -8,6 +8,7 @@ function MainPage(){
       <ul>
         <li> <Link to="/horro"><button> Horro page </button> </Link> </li>
         <li> <Link to="/paint"><button> Paint page </button> </Link> </li>
+        <li> <Link to="/zoo"><button> Z.O.O page </button> </Link> </li>
         <li> <Link to='tennine'> <button> TenNine page </button> </Link> </li>
       </ul>
     </div>
